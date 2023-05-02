@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="github.png">
+    <script src="https://kit.fontawesome.com/172b858d8b.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: 'poppins', sans-serif;
+        }
+        body {
+            background-image: url(pexels-pixmike-413195.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.5);
+            width: 380px;
+            padding: 50px 30px;
+            border-radius: 10px;
+            box-shadow: 7px 7px 60px #000;
+        }
+        .container {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px 0 15px;
+        }
+        header {
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0 10px 0;
+        }
+        .input {
+            height: 45px;
+            width: 87%;
+            border: none;
+            border-bottom-style: solid;
+            outline: none;
+            padding: 0 0 0 45px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        img {
+            position: relative;
+            top: -37px;
+            left: 17px;
+        }
+        .input-field2 {
+            display: flex;
+            flex-direction: column;
+        }
+        .submit {
+            border: none;
+            border-radius: 30px;
+            font-size: 15px;
+            height: 45px;
+            outline: none;
+            width: 100%;
+            background-color: rgb(43, 205, 43);
+            color: white;
+            cursor: pointer;
+            transition: .3s;
+            font-weight: bolder;
+        }
+        .submit:hover {
+            background-color: green;
+        }
+        .bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-weight: bolder;
+            margin-top: 10px;
+        }
+        .left {
+            display: flex;
+        }
+        label a{
+            text-decoration: none;
+            color: black;
+        }
+        p
+        {
+            font-weight: bolder;
+            text-align: center;
+        }
+        .right a {
+            text-decoration: none;
+        }
+        #facebook {
+            color: white;
+            background-color: #1877F2;
+            padding: 10px;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        #facebook:hover {
+            background-color: #3B5998;
+        }
+        #youtube {
+            color: white;
+            background-color: #c4302b;
+            padding: 10px;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        #youtube:hover {
+            background-color: #a31a1c;
+        }
+        #github {
+            color: white;
+            background-color: #1a1313;
+            padding: 10px;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        #github:hover {
+            background-color: #000000;
+        }
+        #Linkedin {
+            color: white;
+            background-color: #0A66C2;
+            padding: 10px;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        #Linkedin:hover {
+            background-color: #04669A;
+        }
+        #twitter {
+            color: white;
+            background-color: #00acee;
+            padding: 10px;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        #twitter:hover {
+            background-color: #00B6F1;
+        }
+        .option {
+            position: relative;
+            left: 50px;
+        }
+    </style>
+</head>
+<body> 
+    <div class="box">
+        <div class="container">
+            <div class="top-header">
+                <header><B>LOGIN</B></header>
+            </div>
+
+            <div class="input-field">
+                <input type="text" class="input" placeholder="Username">
+                <img src="user.png" alt="user">
+            </div>
+            <div class="input-field">
+                <input type="password" class="input" placeholder="password" required>
+                <img src="password.png" alt="pass">
+            </div>
+            <div class="input-field2">
+                <input type="submit" class="submit" value="login">
+            </div>
+
+            <div class="bottom">
+                <div class="left">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember Me</label>
+                </div>
+                <div class="right">
+                    <label><a href="#">Forgot password?</a></label>
+                </div>
+            </div>
+            <p>Sign Up With</p>
+            <div class="option">
+                <a href="#"><i class="fa-brands fa-facebook" title="facebook.com" id="facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube" title="youtube.com" id="youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-github" title="Github.com" id="github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin" title="Linkedin.com" id="Linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter" title="Twitter.com" id="twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
